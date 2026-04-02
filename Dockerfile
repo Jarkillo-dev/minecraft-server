@@ -8,6 +8,7 @@ ENV EULA=true
 
 WORKDIR /server
 
+ARG CACHEBUST=1
 COPY paper.jar paper.jar
 COPY server.properties server.properties
 COPY start.sh start.sh
