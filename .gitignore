@@ -1,0 +1,7 @@
+world/
+plugins/
+logs/
+*.db
+*.db-wal
+*.db-shm
+.env
