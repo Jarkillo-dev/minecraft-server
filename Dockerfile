@@ -5,10 +5,10 @@ ARG MC_RAM=2G
 ENV MC_RAM=${MC_RAM}
 ENV RCON_PASSWORD=changeme
 ENV EULA=true
+ENV BUILD_DATE=2026-04-02T18
 
 WORKDIR /server
 
-ARG CACHEBUST=1
 COPY paper.jar paper.jar
 COPY server.properties server.properties
 COPY start.sh start.sh
