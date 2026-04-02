@@ -1,6 +1,6 @@
 # Minecraft Paper Server
 
-Paper 1.21.1 server ready for Docker/Easypanel deployment. Configured for AI companion bots (Max, Leche Frita).
+Paper 1.21.11 server ready for Docker/Easypanel deployment. Configured for AI companion bots (Max, Leche Frita).
 
 ## Deploy on Easypanel
 
@@ -32,8 +32,8 @@ Paper 1.21.1 server ready for Docker/Easypanel deployment. Configured for AI com
 
 | Arg | Default | Description |
 |-----|---------|-------------|
-| `PAPER_VERSION` | `1.21.1` | Paper MC version |
-| `PAPER_BUILD` | `133` | Paper build number |
+| `PAPER_VERSION` | `1.21.11` | Paper MC version |
+| `PAPER_BUILD` | `69` | Paper build number |
 | `MC_RAM` | `2G` | JVM heap size |
 
 ### Recommended VPS specs
@@ -58,7 +58,7 @@ In the bot's `config.json`, point to your VPS:
   "minecraft": {
     "host": "your-vps-ip-or-domain",
     "port": 25565,
-    "version": "1.21.1"
+    "version": "1.21.11"
   },
   "rcon": {
     "host": "your-vps-ip-or-domain",

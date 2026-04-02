@@ -3,8 +3,8 @@ services:
     build:
       context: .
       args:
-        PAPER_VERSION: "1.21.1"
-        PAPER_BUILD: "133"
+        PAPER_VERSION: "1.21.11"
+        PAPER_BUILD: "69"
         MC_RAM: "2G"
     ports:
       - "25565:25565"
