@@ -7,7 +7,7 @@ ENV RCON_PASSWORD=changeme
 ENV EULA=true
 ENV BUILD_DATE=2026-04-02T18
 
-WORKDIR /server
+WORKDIR /mc
 
 COPY paper.jar paper.jar
 COPY server.properties server.properties
