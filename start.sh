@@ -1,4 +1,6 @@
 #!/bin/sh
+sed -i "s/RCON_PASSWORD_PLACEHOLDER/${RCON_PASSWORD}/" /server/server.properties
+
 exec java \
   -Xms${MC_RAM} \
   -Xmx${MC_RAM} \

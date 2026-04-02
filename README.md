@@ -8,6 +8,7 @@ Paper 1.21.4 server ready for Docker/Easypanel deployment. Configured for AI com
 2. **Source:** GitHub → `Jarkillo-dev/minecraft-server` → branch `main`
 3. **Build:** Dockerfile (auto-detected)
 4. **Environment variables:**
+   - `RCON_PASSWORD` — RCON admin password (**required**)
    - `MC_RAM` — memory allocation (default: `2G`)
 5. **Ports:**
    - `25565` TCP — Minecraft game
@@ -20,13 +21,12 @@ Paper 1.21.4 server ready for Docker/Easypanel deployment. Configured for AI com
 
 ## Configuration
 
-### RCON password
+### Environment variables
 
-Edit `server.properties` before deploy or change it via Easypanel terminal after first run:
-
-```properties
-rcon.password=your-secure-password
-```
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `RCON_PASSWORD` | `changeme` | RCON admin password |
+| `MC_RAM` | `2G` | JVM heap size |
 
 ### Build args
 

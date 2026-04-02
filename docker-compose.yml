@@ -15,6 +15,7 @@ services:
       - logs:/server/logs
     environment:
       - MC_RAM=2G
+      - RCON_PASSWORD=changeme
     restart: unless-stopped
 
 volumes:
