@@ -1,5 +1,5 @@
 world/
-plugins/
+plugins/*/
 logs/
 *.db
 *.db-wal

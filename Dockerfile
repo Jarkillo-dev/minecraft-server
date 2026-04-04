@@ -13,6 +13,7 @@ COPY paper.jar paper.jar
 COPY server.properties server.properties
 COPY spigot.yml spigot.yml
 COPY start.sh start.sh
+COPY plugins/ plugins/
 RUN chmod +x start.sh
 
 # Accept EULA
