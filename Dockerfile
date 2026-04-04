@@ -5,7 +5,7 @@ ARG MC_RAM=2G
 ENV MC_RAM=${MC_RAM}
 ENV RCON_PASSWORD=changeme
 ENV EULA=true
-ENV BUILD_DATE=2026-04-02T18
+ENV BUILD_DATE=2026-04-05T02
 
 WORKDIR /mc
 
@@ -23,7 +23,5 @@ RUN echo "eula=true" > eula.txt
 EXPOSE 25565/tcp
 EXPOSE 25575/tcp
 
-# Persistent data
-VOLUME ["/server/world", "/server/plugins", "/server/logs"]
 
 ENTRYPOINT ["./start.sh"]
